@@ -1,4 +1,4 @@
-SORTING VISULAIZER
+Sorting algorithm visualisizer
 
 The purpose of this repository is to educate on a variety of sorting algorithms:
 - Algorithms: Quick, Insertion, Bubble, Merge, Heap, Selection
