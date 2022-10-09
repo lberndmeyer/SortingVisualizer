@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<!--
+    *****************
+    Owner: Lukas Berndmeyer
+    *****************
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting algorithm visualizer</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p>Amount of Elements:</p>
+                <input id="a_size" type="range" min=10 max=130 step=15 value=50>
+                <p>Animation speed:</p>
+                <input id="a_speed" type="range" min=1 max=8 step=1 value=4>
+                <button id="a_generate">Generate new Array</button>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting algorithm visualizer</p>
+
+                <div class="algos">
+                    <button >Quick</button>
+                    <button >Insertion</button>
+                    <button >Bubble</button>                                
+                    <button >Merge</button>                    
+                    <button >Heap</button>
+                    <button >Selection</button>  
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+
+        <div id="Info_Cont1">
+
+            <h3>Time Complexity</h3>
+
+            <div class="Complexity_Containers" id="Time_Complexity_Types_Container">
+
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Worst case:</p>
+                    <p id="Time_Worst"></p>
+                </div>
+                
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Average case:</p>
+                    <p id="Time_Average"></p>
+                </div>
+                
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Best case:</p>
+                    <p id="Time_Best"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="Info_Cont2">
+
+            <h3>Space Complexity</h3>
+
+            <div class="Complexity_Containers" id="Space_Complexity_Types_Container">
+
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Worst case:</p>
+                    <p id="Space_Worst"></p>
+                </div>
+
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Stability:</p>
+                    <p id="Stable"></p>
+                </div>
+
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Method:</p>
+                    <p id="Method"></p>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="./scripts/main.js"></script> 
+    <script src="./scripts/bubbleSort.js"></script>
+    <script src="./scripts/selectionSort.js"></script>
+    <script src="./scripts/insertionSort.js"></script>
+    <script src="./scripts/mergeSort.js"></script>
+    <script src="./scripts/quickSort.js"></script>
+    <script src="./scripts/heapSort.js"></script>
+</body>
+</html>
